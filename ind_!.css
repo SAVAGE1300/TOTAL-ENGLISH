@@ -1,0 +1,210 @@
+*{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0 auto;
+    text-align: center;
+}
+.jum1{
+    background-color: rgba(19, 85, 100, 0.95);
+}
+.jum3{
+    background-color: rgba(19, 85, 100, 0.95);
+}
+.jum1{
+    height: 340px;
+}
+.jum1 .container h1{
+    animation-name: start;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes start {
+    0%{}
+    50%{
+        color: black;
+        opacity: 0.9;
+        transform: scale(1.09);
+    }
+    100%{
+        color: white;
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.jum1 .container img{
+    width: 13%!important;
+    height: 13%!important;
+}
+.jum2 .container .card-columns .bg-info img{
+    width: 100%!important;
+    height: 100%!important;
+}
+.jum3{
+    height: 400px;
+}
+.jum3 .container button{
+    margin: 0 auto;
+}
+@media only screen and (min-width: 576px) {
+    .jum3{
+        height: auto;
+        margin-top: 100px;
+    }
+    .jum3 .container .container button{
+        padding-bottom: 10px;
+    }
+    .jum4{
+        margin-top: 100px !important;
+    }
+    .jum5 .container .row .c3{
+    }
+}
+.jum4{
+    animation-name: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    position: relative;
+    animation-timing-function: initial;
+}
+/*@keyframes linear {*/
+/*    0%{*/
+/*        opacity: 0.3;*/
+/*    }*/
+/*    50%{*/
+/*        opacity: 1;*/
+/*    }*/
+/*    100%{*/
+/*        opacity: 0.3;*/
+/*    }*/
+/*}*/
+
+
+
+
+
+/*overlay*/
+.div1{
+    position: relative;
+    overflow: hidden;
+}
+.div1:hover{
+    transform: scale(1.7);
+    transition-duration: 2s;
+}
+.div1:hover img{
+    transform: scale(1.2);
+}
+.overlay1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, rgba(255,0,0,.5), rgba(255,0,0,1));
+    top: 1000px;
+    left: -800px;
+    padding-top: 300px;
+    padding-left: 150px;
+}
+.div1:hover .overlay1{
+    transition-duration: .8s;
+    top: 0;
+    left: 0;
+}
+.images:hover{
+    transform: scale(0.9);
+    transition-duration: .5s;
+    box-shadow: 10px 10px rgba(72, 69, 69, 0.5);
+}
+.images{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     transition: all 1s ease;
+ }
+/*overlay*/
+
+
+
+
+/*glowing text*/
+.glow {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    animation-delay: 1s;
+}
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 5px mediumpurple, 0 0 5px purple, 0 0 5px #e60073, 0 0 5px #e60073, 0 0 5px #e60073, 0 0 5px #e60073, 0 0 5px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 10px mediumpurple, 0 0 30px purple, 0 0 20px #ff4da6, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6;
+    }
+}
+/*glowing text*/
+
+
+
+
+
+
+/*animatsiya powered by*/
+.power{
+    margin-top: 5%;
+    padding: 5%;
+    width: 80%;
+    height: 100%;
+}
+#myNametext{
+    text-align: center;
+    font-size: 25px;
+}
+#myName{
+    position: absolute;
+    text-align: center;
+    font-size: 40px!important;
+    animation-name: muname;
+}
+.karobka{
+    border-radius: 0 20px 20px 0;
+    width: 100%;
+    height: 60px!important;
+    background-color: white;
+    animation-name: name;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.karobkabig{
+    width: 99%;
+    height: 59px;
+}
+@keyframes name {
+    0%{
+        left: 0;
+        width: 0;
+    }
+    50%{
+        left: 0;
+        width: 100%;
+    }
+    100%{
+        right: 0;
+        width: 0;
+    }
+
+}
+@keyframes muname {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 0;
+    }
+}
