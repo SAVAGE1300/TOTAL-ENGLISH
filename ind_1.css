@@ -855,7 +855,7 @@ p {
 }
 @media screen and (max-width: 500px) {
     #myBtn{
-        width: 10%;
+        width: 13%;
         height: auto;
     }
 }
